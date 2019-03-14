@@ -1,0 +1,150 @@
+[
+  {
+    "description": "  As a User\n  I want to register to LinkedIn\n  In order to access different features",
+    "keyword": "Feature",
+    "name": "User Registration",
+    "line": 5,
+    "id": "user-registration",
+    "tags": [],
+    "uri": "features/register.feature",
+    "elements": [
+      {
+        "id": "user-registration;display-home-page-header-elements",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Display home page header elements",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am on the home page",
+            "match": {
+              "location": "step-definition/register.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the home page exists",
+            "match": {
+              "location": "step-definition/register.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "contains \"Email or phone number\" textbox",
+            "match": {
+              "location": "step-definition/register.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "contains \"Password\" textbox",
+            "match": {
+              "location": "step-definition/register.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "contains \"Sign in\" button",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I click on \"Sign in\" button",
+            "match": {
+              "location": "step-definition/register.js:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;display-sign-up-form",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Display Sign Up form",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am on the home page",
+            "match": {
+              "location": "step-definition/register.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1099000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the home page exists",
+            "match": {
+              "location": "step-definition/register.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the page contains sign up form with title \"Be great at what you do\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "contains a subtitle \"Get started - it's free.\"",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
