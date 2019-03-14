@@ -28,8 +28,24 @@ Then(/^contains the "(.*?)" textbox$/,(title) => {
 
 Then(/^contains button "(.*?)" button$/,(title) => {
   return register.isDisplayedWithDelay('@signin');
+}); 
+
+Then(/^the page contains sign up form with title "(.*?)"$/, (title)=> {
+  return register.isDisplayedWithDelay('@mainheading')
 });
 
+
+Then(/^contains a subtitle "(.*?)"$/, (title)=> {
+  return register.isDisplayedWithDelay('@subheading')
+});
+
+Then(/^contains link "(.*?)"$/, (title)=> {
+  return register.isDisplayedWithDelay('@password_link')
+});
+
+When(/^I enter the "(.*?)" and "(.*?)"$/, (title1, title2)=> {
+  return register.enterCredentials('@email', '@password')
+})
 Then(/^I click on "(.*?)" button$/,(title) => {
   return register.isButtonClick('@signin')
 });

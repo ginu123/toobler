@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5615000000
+              "duration": 5546000000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 253000000
+              "duration": 244000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 235000000
+              "duration": 242000000
             }
           },
           {
@@ -65,28 +65,29 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225000000
+              "duration": 243000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "contains \"Sign in\" button",
+            "name": "contains button \"Sign in\" button",
+            "match": {
+              "location": "step-definition/register.js:29"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 241000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I click on \"Sign in\" button",
-            "match": {
-              "location": "step-definition/register.js:33"
-            },
+            "keyword": "And ",
+            "line": 18,
+            "name": "contains link \"Forgot password?\" link",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             }
           }
         ]
@@ -109,7 +110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1099000000
+              "duration": 1121000000
             }
           },
           {
@@ -122,7 +123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 232000000
             }
           },
           {
@@ -130,8 +131,12 @@
             "keyword": "And ",
             "line": 25,
             "name": "the page contains sign up form with title \"Be great at what you do\"",
+            "match": {
+              "location": "step-definition/register.js:33"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 240000000
             }
           },
           {
@@ -139,8 +144,74 @@
             "keyword": "And ",
             "line": 26,
             "name": "contains a subtitle \"Get started - it's free.\"",
+            "match": {
+              "location": "step-definition/register.js:38"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 233000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-registration;enter-the-login-details",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Enter the login details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I am on the home page",
+            "match": {
+              "location": "step-definition/register.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 832000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the home page exists",
+            "match": {
+              "location": "step-definition/register.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I enter the \"email\" and \"password\"",
+            "match": {
+              "location": "step-definition/register.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 479000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I click on \"Sign in\" button",
+            "match": {
+              "location": "step-definition/register.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2740000000
             }
           }
         ]

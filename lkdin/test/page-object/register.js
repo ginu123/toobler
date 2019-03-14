@@ -8,12 +8,13 @@ module.exports = {
       elements: {
         loginform: '.login-form',
         registerform: '#regForm',
+        email:"#login-email",
+        password:"#login-password",
+        signin:"#login-submit", 
+        password_link: ".link-forgot-password",
         mainheading: '.title',
         subheading: '.subtitle',
-        email:"#login-email"
-
-   
-  
+        login_details: '.login-form'
       },
       commands: [
         {
@@ -31,7 +32,17 @@ module.exports = {
             .click(element,function(){
               this.pause(1000)
             })
-          }
-          
-        }]
-    }
+          },
+          enterCredentials: function(element) {
+            return this.getAttribute(element,'checked', function(result){
+              this.useXpath()
+             .assert.visible("//INPUT[@id='login-email']")
+             . assert.visible("//INPUT[@id='login-password']")
+             .setValue("//input[@id='login-email']","abc@gmail.com")
+             .setValue("//input[@id='login-password']","xyz")
+
+             this.useCss()
+            }
+          )}
+    }]
+  } 
